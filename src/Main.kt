@@ -2,26 +2,31 @@ fun main (){
     remove("Branie bakes brown bagels and buns")
 
     numbers(12, 34,24)
+//    var arrayNum=arrayOf(num1, num2, num3)
+    var arrayNum = arrayOf(12,23,24)
+    println(arrayNum.sum())
+    println(arrayNum.count())
+    println(arrayNum.average())
 
 
     volume(14)
 
-    isPalindrome("")
-
-
-
-
+    isPalindrome("noon")
 }
+
 
 fun remove(word: String){
     println(word)
 }
 
-fun numbers(num1: Int, num2: Int, num3: Int): Int {
+fun numbers(num1: Int, num2: Int, num3: Int): Int{
     var arrayNum=arrayOf(num1, num2, num3)
-    println(arrayNum.sum())
-    println(arrayNum.count())
-    println(arrayNum.average())
+    var sum = num1 + num2 + num3
+//    println(arrayNum.sum())
+//    println(arrayNum.count())
+//    println(arrayNum.average())
+    return sum
+
 }
 
 fun volume(fig: Int){
@@ -30,7 +35,7 @@ fun volume(fig: Int){
 }
 
 fun isPalindrome(word: String): Boolean{
-    if(word==)
+    if(word==word)
         return true
     else{
         return false
