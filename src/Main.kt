@@ -12,6 +12,8 @@ fun main (){
     volume(14)
 
     isPalindrome("noon")
+
+    println( isPalindrome("noon"))
 }
 
 
@@ -22,10 +24,12 @@ fun remove(word: String){
 fun numbers(num1: Int, num2: Int, num3: Int): Int{
     var arrayNum=arrayOf(num1, num2, num3)
     var sum = num1 + num2 + num3
-//    println(arrayNum.sum())
-//    println(arrayNum.count())
-//    println(arrayNum.average())
+    var average = arrayNum.average()
+    var count = arrayNum.count()
+
     return sum
+//    return mean
+    return count
 
 }
 
